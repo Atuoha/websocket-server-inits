@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebSockets</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+</head>
+<body>
+    <div class="container">
+        <div class="col-md-5 mx-auto mt-5">
+            <h4>SERVER STATUS</h4>
+            <form action="javascript:void(0)">
+                <div class="form-group">
+                    <label for="message">Message Content:</label>
+                    <textarea class="form-control" name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-primary btn-block">Broadcast Message <i class="fa fa-envelope"></i></button>
+                </div>
+            </form>
+
+
+            <div id="message-box">
+                <h5 class="lead"></h5>
+            </div>
+        </div>
+    </div>
+
+<script src="jquery-3.2.1.min.js"></script>
+<script src="websocket-client.js"></script>
+</body>
+</html>
